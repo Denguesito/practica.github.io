@@ -1,0 +1,353 @@
+/* styles.css */
+
+/* Estilo básico para el cuerpo */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #69110b; /* Color de fondo de la página (cambia este valor según tus preferencias) */
+}
+
+/* Estilo para el encabezado principal */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para secciones */
+section {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 10;  /* Asegurarse de que el footer esté por encima de otros elementos si es necesario */
+}
+
+.social-media img {
+    width: 32px;
+    height: 32px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para los encabezados */
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los párrafos */
+p {
+    color: #666;
+    text-align: center;
+}
+
+/* Estilo para listas */
+ol, ul {
+    margin-left: 40px;
+}
+
+/* Estilo para tablas */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Estilo para enlaces */
+a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para imágenes */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo para formularios */
+form {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+input[type="submit"]:hover {
+    background-color: #1558b0;
+}
+
+/* Estilo para el carrusel */
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;  /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra */
+}
+
+.carousel-item {
+    display: none;
+    width: 100%;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;  /* Bordes redondeados */
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;  /* Botones redondeados */
+    z-index: 10;  /* Asegúrate de que los botones estén encima de las imágenes */
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Estilo para testimonios */
+blockquote {
+    border-left: 5px solid #ddd;
+    margin: 20px;
+    padding-left: 15px;
+    font-style: italic;
+    color: #555;
+}
+
+cite {
+    display: block;
+    text-align: right;
+    color: #333;
+    font-weight: bold;
+}
+#proyectos {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.project {
+    margin: 20px 0;
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.project a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+#suscripcion {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#suscripcion form {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#suscripcion input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-right: 10px;
+    width: 300px;
+}
+
+#suscripcion input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#suscripcion input[type="submit"]:hover {
+    background-color: #1558b0;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.project {
+    animation: fadeIn 1s ease-in-out;
+}
+
+#proyectos h2, #suscripcion h2 {
+    animation: fadeIn 2s ease-in-out;
+}
+#testimonios {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+#testimonios h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Espacio adicional en la parte inferior del testimonio para evitar superposición */
+#testimonios {
+    margin-bottom: 60px;
+}
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .project {
+        margin: 10px 0;
+    }
+
+    #suscripcion input[type="email"] {
+        width: calc(100% - 120px);
+    }
+}
